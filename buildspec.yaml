@@ -12,6 +12,10 @@ phases:
   post_build:
     commands:
       - echo clear cloudfront cache
+<<<<<<< HEAD
+=======
+      - aws cloudfront create-invalidation --distribution-id $CLOUDFRONT_DISTRO_ID --paths "/*"
+>>>>>>> d1514209cb3b05bf5b5060d7958934af7faad552
 artifacts:
   base-directory: build
   files:
